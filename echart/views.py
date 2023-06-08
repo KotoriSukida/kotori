@@ -1,3 +1,4 @@
+from django.db.models import Count
 from django.http import JsonResponse
 from django.shortcuts import render
 from django.views import View
@@ -16,9 +17,9 @@ class SalesAPIVIew(View):
     def get(self, request):
         """
         查询所有数据
-        路由：GET /books/
+        路由：GET /sale
         """
-        queryset = Sale.objects.all()
+        queryset = Sale.objects.all().filter(order_Date__contains='2016')
         sale_list = []
         for sale in queryset:
             sale_list.append({
