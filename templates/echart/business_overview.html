@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div id="chart"></div>
+<script>
+    {#初始化 echarts 对象#}
+    const mychart = echarts.init(document.getElementById('chart'));
+
+    {#首先，声明两个 javascript 的数组#}
+    const series_data = [];
+    const xAxis_data = [];
+
+    {#使用循环，依次将数据库需要展示的数据添加到刚才声明的数组中#}
+    {% for stu in sale_info %}
+        series_data.push({{ stu.sales_Total  }})
+        {#注意这里的双引号#}
+        xAxis_data.push("{{ stu.area}}")
+    {% endfor %}
+
+    {#可视化展示选项#}
+    const option = {
+        xAxis: {
+            type: 'category',
+            {#将x轴坐标修改为数据库中的学生姓名#}
+            data: xAxis_data
+        },
+        yAxis: {
+            type: 'value'
+        },
+        series: [{
+            {#将y轴的数据修改为数据库中学生的成绩，即score#}
+            data: series_data,
+            type: 'line'
+        }]
+    };
+    {#将 echarts对象与展示选项结合起来#}
+    mychart.setOption(option);
+
+</script>
+
+
+{% endblock %}
