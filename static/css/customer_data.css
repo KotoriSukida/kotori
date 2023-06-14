@@ -1,0 +1,52 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  /* background-color: #d66b4e; */
+}
+
+.main {
+  z-index: 0;
+  display: flex;
+  width: 100%;
+  position: absolute;
+  float: left;
+}
+
+.left {
+  width: 66%;
+  height: 1600px
+}
+
+.right {
+  width: 34%;
+  height: 1000px
+}
+
+.table {
+  width: 100%;
+}
+
+#pareto {
+  width: 100%;
+  height: 400px;
+}
+
+#rfmsum {
+  width: 100%;
+  height: 400px;
+}
+
+#rfm_r {
+  width: 100%;
+  height: 400px;
+}
+
+#rfm_f {
+  width: 100%;
+  height: 400px;
+}
+
+#rfm_m {
+  width: 100%;
+  height: 400px;
+}

@@ -1,0 +1,36 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+/* div{
+    display: flex;
+    position: relative;
+} */
+#row_01{
+    display: flex;
+    position: relative;
+    height:400px;
+    width: 100%;
+}
+
+#pie{
+    height: 100%;
+    width: 50%;
+}
+#bar_01{
+    height: 100%;
+    width: 50%;
+}
+
+#row_02{
+    height:800px;
+    width: 100%;
+}
+#bar_02{
+    height:50%;
+    width: 100%;
+}
+#bar_03{
+    height:50%;
+    width: 100%;
+}

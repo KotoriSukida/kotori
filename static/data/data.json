@@ -1,0 +1,2218 @@
+{
+  "装订机": [
+    {
+      "name": "镊子",
+      "value": 6
+    },
+    {
+      "name": "钉子",
+      "value": 8
+    },
+    {
+      "name": "铁丝",
+      "value": 4
+    },
+    {
+      "name": "皮带",
+      "value": 3
+    },
+    {
+      "name": "齿轮",
+      "value": 7
+    },
+    {
+      "name": "螺丝",
+      "value": 9
+    },
+    {
+      "name": "夹层",
+      "value": 5
+    },
+    {
+      "name": "夹板",
+      "value": 7
+    },
+    {
+      "name": "衬垫",
+      "value": 4
+    },
+    {
+      "name": "主轴",
+      "value": 8
+    },
+    {
+      "name": "针",
+      "value": 6
+    },
+    {
+      "name": "线",
+      "value": 9
+    },
+    {
+      "name": "刀",
+      "value": 5
+    },
+    {
+      "name": "胶水",
+      "value": 3
+    },
+    {
+      "name": "活页",
+      "value": 7
+    },
+    {
+      "name": "夹具",
+      "value": 4
+    },
+    {
+      "name": "夹持",
+      "value": 6
+    },
+    {
+      "name": "板料",
+      "value": 8
+    },
+    {
+      "name": "粘合",
+      "value": 5
+    },
+    {
+      "name": "压板",
+      "value": 7
+    },
+    {
+      "name": "压力",
+      "value": 9
+    },
+    {
+      "name": "装订",
+      "value": 8
+    },
+    {
+      "name": "打孔",
+      "value": 6
+    },
+    {
+      "name": "切割",
+      "value": 4
+    },
+    {
+      "name": "搬运",
+      "value": 7
+    },
+    {
+      "name": "分拣",
+      "value": 5
+    },
+    {
+      "name": "合页",
+      "value": 3
+    },
+    {
+      "name": "上光",
+      "value": 4
+    },
+    {
+      "name": "烫金",
+      "value": 6
+    },
+    {
+      "name": "包装",
+      "value": 8
+    }
+  ],
+  "椅子": [
+    {
+      "name": "椅背",
+      "value": 8
+    },
+    {
+      "name": "椅座",
+      "value": 9
+    },
+    {
+      "name": "扶手",
+      "value": 7
+    },
+    {
+      "name": "椅腿",
+      "value": 6
+    },
+    {
+      "name": "靠背",
+      "value": 5
+    },
+    {
+      "name": "坐垫",
+      "value": 4
+    },
+    {
+      "name": "防滑垫",
+      "value": 3
+    },
+    {
+      "name": " chairman",
+      "value": 10
+    },
+    {
+      "name": "sofa",
+      "value": 9
+    },
+    {
+      "name": "bench",
+      "value": 8
+    },
+    {
+      "name": "stool",
+      "value": 7
+    },
+    {
+      "name": "bar stool",
+      "value": 6
+    },
+    {
+      "name": "folding chair",
+      "value": 5
+    },
+    {
+      "name": "rocking chair",
+      "value": 4
+    },
+    {
+      "name": "recliner",
+      "value": 3
+    },
+    {
+      "name": "pawn",
+      "value": 7
+    },
+    {
+      "name": "木头",
+      "value": 8
+    },
+    {
+      "name": "塑料",
+      "value": 6
+    },
+    {
+      "name": "铁",
+      "value": 9
+    },
+    {
+      "name": "布",
+      "value": 5
+    },
+    {
+      "name": "皮",
+      "value": 4
+    },
+    {
+      "name": "坐",
+      "value": 10
+    },
+    {
+      "name": "靠",
+      "value": 9
+    },
+    {
+      "name": "倚",
+      "value": 8
+    },
+    {
+      "name": "躺",
+      "value": 7
+    },
+    {
+      "name": "跷",
+      "value": 6
+    },
+    {
+      "name": "搁",
+      "value": 5
+    },
+    {
+      "name": "推",
+      "value": 4
+    },
+    {
+      "name": "滑",
+      "value": 3
+    },
+    {
+      "name": "旋转",
+      "value": 7
+    },
+    {
+      "name": "摇晃",
+      "value": 6
+    },
+    {
+      "name": "蜷缩",
+      "value": 5
+    },
+    {
+      "name": "躬身",
+      "value": 4
+    },
+    {
+      "name": "侧倚",
+      "value": 3
+    },
+    {
+      "name": "起立",
+      "value": 8
+    },
+    {
+      "name": "站立",
+      "value": 7
+    }
+  ],
+  "收纳具": [
+    {
+      "name": "衣柜",
+      "value": 60
+    },
+    {
+      "name": "抽屉",
+      "value": 50
+    },
+    {
+      "name": "箱子",
+      "value": 40
+    },
+    {
+      "name": "篮子",
+      "value": 30
+    },
+    {
+      "name": "架子",
+      "value": 35
+    },
+    {
+      "name": "橱柜",
+      "value": 45
+    },
+    {
+      "name": "置物架",
+      "value": 25
+    },
+    {
+      "name": "收纳袋",
+      "value": 20
+    },
+    {
+      "name": "收纳盒",
+      "value": 15
+    },
+    {
+      "name": "分类架",
+      "value": 30
+    },
+    {
+      "name": "鞋柜",
+      "value": 40
+    },
+    {
+      "name": "桌面收纳",
+      "value": 20
+    },
+    {
+      "name": "文件柜",
+      "value": 35
+    },
+    {
+      "name": "储物柜",
+      "value": 25
+    },
+    {
+      "name": "悬挂收纳",
+      "value": 15
+    },
+    {
+      "name": "床下收纳",
+      "value": 20
+    },
+    {
+      "name": "化妆品收纳",
+      "value": 25
+    },
+    {
+      "name": "墙面收纳",
+      "value": 30
+    },
+    {
+      "name": "门背收纳",
+      "value": 35
+    },
+    {
+      "name": "桌面收纳架",
+      "value": 15
+    },
+    {
+      "name": "床头柜",
+      "value": 20
+    },
+    {
+      "name": "收纳箱",
+      "value": 25
+    },
+    {
+      "name": "收纳架",
+      "value": 30
+    },
+    {
+      "name": "收纳袋",
+      "value": 20
+    },
+    {
+      "name": "收纳篮",
+      "value": 15
+    },
+    {
+      "name": "收纳筐",
+      "value": 25
+    },
+    {
+      "name": "衣物收纳",
+      "value": 35
+    },
+    {
+      "name": "鞋 heels收纳",
+      "value": 10
+    },
+    {
+      "name": "袜子收纳",
+      "value": 5
+    },
+    {
+      "name": "资料收纳",
+      "value": 30
+    }
+  ],
+  "信封": [
+    {
+      "name": "信封",
+      "value": 5
+    },
+    {
+      "name": "回邮件",
+      "value": 4
+    },
+    {
+      "name": "邮票",
+      "value": 3
+    },
+    {
+      "name": "寄信",
+      "value": 5
+    },
+    {
+      "name": "快递",
+      "value": 4
+    },
+    {
+      "name": "收信",
+      "value": 4
+    },
+    {
+      "name": "投递",
+      "value": 3
+    },
+    {
+      "name": "包裹",
+      "value": 3
+    },
+    {
+      "name": "邮筒",
+      "value": 2
+    },
+    {
+      "name": "扫码",
+      "value": 3
+    },
+    {
+      "name": "寄件",
+      "value": 4
+    },
+    {
+      "name": "收件",
+      "value": 3
+    },
+    {
+      "name": "接口",
+      "value": 2
+    },
+    {
+      "name": "回信",
+      "value": 4
+    },
+    {
+      "name": "录入",
+      "value": 2
+    },
+    {
+      "name": "缺失",
+      "value": 2
+    },
+    {
+      "name": "通知",
+      "value": 3
+    },
+    {
+      "name": "落地",
+      "value": 2
+    },
+    {
+      "name": "签收",
+      "value": 4
+    },
+    {
+      "name": "妥投",
+      "value": 3
+    },
+    {
+      "name": "保价",
+      "value": 3
+    },
+    {
+      "name": "查件",
+      "value": 3
+    },
+    {
+      "name": "投递员",
+      "value": 3
+    },
+    {
+      "name": "取件",
+      "value": 3
+    },
+    {
+      "name": "派件",
+      "value": 3
+    },
+    {
+      "name": "邮局",
+      "value": 4
+    },
+    {
+      "name": "快递员",
+      "value": 4
+    },
+    {
+      "name": "打包",
+      "value": 3
+    },
+    {
+      "name": "航运",
+      "value": 2
+    },
+    {
+      "name": "航空",
+      "value": 2
+    }
+  ],
+  "书架": [
+    {
+      "name": "书架",
+      "value": 5
+    },
+    {
+      "name": "书籍",
+      "value": 5
+    },
+    {
+      "name": "读书",
+      "value": 4
+    },
+    {
+      "name": "阅读",
+      "value": 4
+    },
+    {
+      "name": "书房",
+      "value": 3
+    },
+    {
+      "name": "书柜",
+      "value": 4
+    },
+    {
+      "name": "书店",
+      "value": 3
+    },
+    {
+      "name": "书本",
+      "value": 4
+    },
+    {
+      "name": "书架",
+      "value": 4
+    },
+    {
+      "name": "书桌",
+      "value": 3
+    },
+    {
+      "name": "书签",
+      "value": 3
+    },
+    {
+      "name": "目录",
+      "value": 2
+    },
+    {
+      "name": "章节",
+      "value": 2
+    },
+    {
+      "name": "杂志",
+      "value": 2
+    },
+    {
+      "name": "期刊",
+      "value": 2
+    },
+    {
+      "name": "电子书",
+      "value": 3
+    },
+    {
+      "name": "藏书",
+      "value": 3
+    },
+    {
+      "name": "阅览",
+      "value": 2
+    },
+    {
+      "name": "书脊",
+      "value": 2
+    },
+    {
+      "name": "书脊",
+      "value": 2
+    },
+    {
+      "name": "书套",
+      "value": 2
+    },
+    {
+      "name": "书膜",
+      "value": 1
+    },
+    {
+      "name": "护封",
+      "value": 1
+    },
+    {
+      "name": "书包",
+      "value": 2
+    },
+    {
+      "name": "书伴",
+      "value": 1
+    },
+    {
+      "name": "读者",
+      "value": 3
+    },
+    {
+      "name": "作者",
+      "value": 3
+    },
+    {
+      "name": "翻页",
+      "value": 2
+    },
+    {
+      "name": "豆瓣",
+      "value": 3
+    },
+    {
+      "name": "推荐",
+      "value": 3
+    }
+  ],
+  "用具": [
+    {
+      "name": "笔",
+      "value": 5
+    },
+    {
+      "name": "纸",
+      "value": 5
+    },
+    {
+      "name": "手机",
+      "value": 4
+    },
+    {
+      "name": "电脑",
+      "value": 4
+    },
+    {
+      "name": "杯子",
+      "value": 3
+    },
+    {
+      "name": "碗",
+      "value": 4
+    },
+    {
+      "name": "叉子",
+      "value": 3
+    },
+    {
+      "name": "筷子",
+      "value": 4
+    },
+    {
+      "name": "勺子",
+      "value": 4
+    },
+    {
+      "name": "刀",
+      "value": 3
+    },
+    {
+      "name": "锅",
+      "value": 3
+    },
+    {
+      "name": "碟子",
+      "value": 2
+    },
+    {
+      "name": "杯垫",
+      "value": 2
+    },
+    {
+      "name": "水壶",
+      "value": 2
+    },
+    {
+      "name": "茶几",
+      "value": 2
+    },
+    {
+      "name": "充电器",
+      "value": 3
+    },
+    {
+      "name": "布",
+      "value": 3
+    },
+    {
+      "name": "毛巾",
+      "value": 2
+    },
+    {
+      "name": "枕头",
+      "value": 2
+    },
+    {
+      "name": "被子",
+      "value": 2
+    },
+    {
+      "name": "床单",
+      "value": 2
+    },
+    {
+      "name": "睡衣",
+      "value": 1
+    },
+    {
+      "name": "拖鞋",
+      "value": 1
+    },
+    {
+      "name": "衣柜",
+      "value": 2
+    },
+    {
+      "name": "衣架",
+      "value": 1
+    },
+    {
+      "name": "用户",
+      "value": 3
+    },
+    {
+      "name": "服务",
+      "value": 3
+    },
+    {
+      "name": "远程",
+      "value": 2
+    },
+    {
+      "name": "同步",
+      "value": 2
+    },
+    {
+      "name": "云端",
+      "value": 3
+    }
+  ],
+  "用品": [
+    {
+      "name": "东西",
+      "value": 5
+    },
+    {
+      "name": "工具",
+      "value": 5
+    },
+    {
+      "name": "物品",
+      "value": 4
+    },
+    {
+      "name": "设备",
+      "value": 4
+    },
+    {
+      "name": "产品",
+      "value": 3
+    },
+    {
+      "name": "货物",
+      "value": 4
+    },
+    {
+      "name": "商品",
+      "value": 3
+    },
+    {
+      "name": "用具",
+      "value": 4
+    },
+    {
+      "name": "衣服",
+      "value": 4
+    },
+    {
+      "name": "餐具",
+      "value": 3
+    },
+    {
+      "name": "饰品",
+      "value": 3
+    },
+    {
+      "name": "箱子",
+      "value": 2
+    },
+    {
+      "name": "包",
+      "value": 2
+    },
+    {
+      "name": "鞋",
+      "value": 2
+    },
+    {
+      "name": "化妆品",
+      "value": 2
+    },
+    {
+      "name": "饮料",
+      "value": 3
+    },
+    {
+      "name": "零食",
+      "value": 3
+    },
+    {
+      "name": "生活用品",
+      "value": 2
+    },
+    {
+      "name": "日常用品",
+      "value": 2
+    },
+    {
+      "name": "家具",
+      "value": 2
+    },
+    {
+      "name": "家电",
+      "value": 2
+    },
+    {
+      "name": "配件",
+      "value": 1
+    },
+    {
+      "name": "耳机",
+      "value": 1
+    },
+    {
+      "name": "充电宝",
+      "value": 2
+    },
+    {
+      "name": "存储卡",
+      "value": 1
+    },
+    {
+      "name": "U盘",
+      "value": 3
+    },
+    {
+      "name": "手表",
+      "value": 3
+    },
+    {
+      "name": "手环",
+      "value": 2
+    },
+    {
+      "name": "文具",
+      "value": 2
+    },
+    {
+      "name": "学习用品",
+      "value": 3
+    }
+  ],
+  "系固件": [
+    {
+      "name": "线",
+      "value": 5
+    },
+    {
+      "name": "绳",
+      "value": 5
+    },
+    {
+      "name": "索",
+      "value": 4
+    },
+    {
+      "name": "带",
+      "value": 4
+    },
+    {
+      "name": "链",
+      "value": 3
+    },
+    {
+      "name": "钢丝",
+      "value": 4
+    },
+    {
+      "name": "绳索",
+      "value": 3
+    },
+    {
+      "name": "软索",
+      "value": 4
+    },
+    {
+      "name": "吊索",
+      "value": 4
+    },
+    {
+      "name": "吊线",
+      "value": 3
+    },
+    {
+      "name": "吊带",
+      "value": 3
+    },
+    {
+      "name": "吊绳",
+      "value": 2
+    },
+    {
+      "name": "拉链",
+      "value": 2
+    },
+    {
+      "name": "扣子",
+      "value": 2
+    },
+    {
+      "name": "纽扣",
+      "value": 2
+    },
+    {
+      "name": "logo",
+      "value": 3
+    },
+    {
+      "name": "标识",
+      "value": 3
+    },
+    {
+      "name": "牌子",
+      "value": 2
+    },
+    {
+      "name": "标签",
+      "value": 2
+    },
+    {
+      "name": "价格",
+      "value": 2
+    },
+    {
+      "name": "产地",
+      "value": 2
+    },
+    {
+      "name": "指示",
+      "value": 1
+    },
+    {
+      "name": "挂件",
+      "value": 1
+    },
+    {
+      "name": "徽标",
+      "value": 2
+    },
+    {
+      "name": "饰物",
+      "value": 1
+    },
+    {
+      "name": "装饰",
+      "value": 3
+    },
+    {
+      "name": "搭扣",
+      "value": 3
+    },
+    {
+      "name": "扫码",
+      "value": 2
+    },
+    {
+      "name": "识别",
+      "value": 2
+    },
+    {
+      "name": "验证",
+      "value": 3
+    }
+  ],
+  "电话": [
+    {
+      "name": "电话",
+      "value": 5
+    },
+    {
+      "name": "号码",
+      "value": 5
+    },
+    {
+      "name": "呼叫",
+      "value": 4
+    },
+    {
+      "name": "接听",
+      "value": 4
+    },
+    {
+      "name": "通话",
+      "value": 3
+    },
+    {
+      "name": "来电",
+      "value": 4
+    },
+    {
+      "name": "拨号",
+      "value": 3
+    },
+    {
+      "name": "拨打",
+      "value": 4
+    },
+    {
+      "name": "电话本",
+      "value": 4
+    },
+    {
+      "name": "联系人",
+      "value": 3
+    },
+    {
+      "name": "转接",
+      "value": 3
+    },
+    {
+      "name": "通讯录",
+      "value": 2
+    },
+    {
+      "name": "电话卡",
+      "value": 2
+    },
+    {
+      "name": "SIM卡",
+      "value": 2
+    },
+    {
+      "name": "充值",
+      "value": 2
+    },
+    {
+      "name": "话费",
+      "value": 3
+    },
+    {
+      "name": "欠费",
+      "value": 3
+    },
+    {
+      "name": "漏话",
+      "value": 2
+    },
+    {
+      "name": "漏接",
+      "value": 2
+    },
+    {
+      "name": "来电显示",
+      "value": 2
+    },
+    {
+      "name": "话约",
+      "value": 2
+    },
+    {
+      "name": "预约",
+      "value": 1
+    },
+    {
+      "name": "电话会议",
+      "value": 1
+    },
+    {
+      "name": "三方通话",
+      "value": 2
+    },
+    {
+      "name": "静音",
+      "value": 1
+    },
+    {
+      "name": "免提",
+      "value": 3
+    },
+    {
+      "name": "通话记录",
+      "value": 3
+    },
+    {
+      "name": "挂机",
+      "value": 2
+    },
+    {
+      "name": "续接",
+      "value": 2
+    },
+    {
+      "name": "转移",
+      "value": 3
+    }
+  ],
+  "复印机": [
+    {
+      "name": "复印机",
+      "value": 5
+    },
+    {
+      "name": "复印",
+      "value": 5
+    },
+    {
+      "name": "打印",
+      "value": 4
+    },
+    {
+      "name": "扫描",
+      "value": 4
+    },
+    {
+      "name": "纸张",
+      "value": 3
+    },
+    {
+      "name": "纸",
+      "value": 4
+    },
+    {
+      "name": "打印机",
+      "value": 3
+    },
+    {
+      "name": "扫描仪",
+      "value": 4
+    },
+    {
+      "name": "激光打印机",
+      "value": 4
+    },
+    {
+      "name": "墨盒",
+      "value": 3
+    },
+    {
+      "name": "碳粉",
+      "value": 3
+    },
+    {
+      "name": "墨粉",
+      "value": 2
+    },
+    {
+      "name": "原稿",
+      "value": 2
+    },
+    {
+      "name": "复印件",
+      "value": 2
+    },
+    {
+      "name": "输纸口",
+      "value": 2
+    },
+    {
+      "name": "扫描口",
+      "value": 3
+    },
+    {
+      "name": "喷墨",
+      "value": 3
+    },
+    {
+      "name": "喷头",
+      "value": 2
+    },
+    {
+      "name": "料仓",
+      "value": 2
+    },
+    {
+      "name": "输出",
+      "value": 2
+    },
+    {
+      "name": "输入",
+      "value": 2
+    },
+    {
+      "name": "双面",
+      "value": 1
+    },
+    {
+      "name": "透印",
+      "value": 1
+    },
+    {
+      "name": "缩放",
+      "value": 2
+    },
+    {
+      "name": "设置",
+      "value": 1
+    },
+    {
+      "name": "替换",
+      "value": 3
+    },
+    {
+      "name": "维修",
+      "value": 3
+    },
+    {
+      "name": "故障",
+      "value": 2
+    },
+    {
+      "name": "报警",
+      "value": 2
+    },
+    {
+      "name": "示意图",
+      "value": 3
+    }
+  ],
+  "配件": [
+    {
+      "name": "配件",
+      "value": 5
+    },
+    {
+      "name": "组件",
+      "value": 5
+    },
+    {
+      "name": "部件",
+      "value": 4
+    },
+    {
+      "name": "零件",
+      "value": 4
+    },
+    {
+      "name": "附件",
+      "value": 3
+    },
+    {
+      "name": "装置",
+      "value": 4
+    },
+    {
+      "name": "结构",
+      "value": 3
+    },
+    {
+      "name": "构件",
+      "value": 4
+    },
+    {
+      "name": "机构",
+      "value": 4
+    },
+    {
+      "name": "器件",
+      "value": 3
+    },
+    {
+      "name": "元件",
+      "value": 3
+    },
+    {
+      "name": "节点",
+      "value": 2
+    },
+    {
+      "name": "部品",
+      "value": 2
+    },
+    {
+      "name": "零部件",
+      "value": 2
+    },
+    {
+      "name": "配套",
+      "value": 2
+    },
+    {
+      "name": "插件",
+      "value": 3
+    },
+    {
+      "name": "卡座",
+      "value": 3
+    },
+    {
+      "name": "插槽",
+      "value": 2
+    },
+    {
+      "name": "接口",
+      "value": 2
+    },
+    {
+      "name": "端子",
+      "value": 2
+    },
+    {
+      "name": "终端",
+      "value": 2
+    },
+    {
+      "name": "转接头",
+      "value": 1
+    },
+    {
+      "name": "接头",
+      "value": 1
+    },
+    {
+      "name": "排线",
+      "value": 2
+    },
+    {
+      "name": "电缆",
+      "value": 1
+    },
+    {
+      "name": "线材",
+      "value": 3
+    },
+    {
+      "name": "皮带",
+      "value": 3
+    },
+    {
+      "name": "滑轮",
+      "value": 2
+    },
+    {
+      "name": "滚轮",
+      "value": 2
+    },
+    {
+      "name": " circuit",
+      "value": 3
+    }
+  ],
+  "器具": [
+    {
+      "name": "器具",
+      "value": 5
+    },
+    {
+      "name": "工具",
+      "value": 5
+    },
+    {
+      "name": "设备",
+      "value": 4
+    },
+    {
+      "name": "仪器",
+      "value": 4
+    },
+    {
+      "name": "机器",
+      "value": 3
+    },
+    {
+      "name": "机械",
+      "value": 4
+    },
+    {
+      "name": "装置",
+      "value": 3
+    },
+    {
+      "name": "设施",
+      "value": 4
+    },
+    {
+      "name": "使用",
+      "value": 4
+    },
+    {
+      "name": "运行",
+      "value": 3
+    },
+    {
+      "name": "操作",
+      "value": 3
+    },
+    {
+      "name": "制动",
+      "value": 2
+    },
+    {
+      "name": "控制",
+      "value": 2
+    },
+    {
+      "name": "执行",
+      "value": 2
+    },
+    {
+      "name": "启动",
+      "value": 2
+    },
+    {
+      "name": "驱动",
+      "value": 3
+    },
+    {
+      "name": "驱动器",
+      "value": 3
+    },
+    {
+      "name": "驱动力",
+      "value": 2
+    },
+    {
+      "name": "驱动装置",
+      "value": 2
+    },
+    {
+      "name": "驱动机构",
+      "value": 2
+    },
+    {
+      "name": "传动",
+      "value": 2
+    },
+    {
+      "name": "变速器",
+      "value": 1
+    },
+    {
+      "name": "变矩器",
+      "value": 1
+    },
+    {
+      "name": "工作",
+      "value": 2
+    },
+    {
+      "name": "运转",
+      "value": 1
+    },
+    {
+      "name": "调速",
+      "value": 3
+    },
+    {
+      "name": "供电",
+      "value": 3
+    },
+    {
+      "name": "驱动电机",
+      "value": 2
+    },
+    {
+      "name": "驱动系统",
+      "value": 3
+    }
+  ],
+  "标签": [
+    {
+      "name": "标签",
+      "value": 5
+    },
+    {
+      "name": "标记",
+      "value": 5
+    },
+    {
+      "name": "标识",
+      "value": 4
+    },
+    {
+      "name": "标志",
+      "value": 4
+    },
+    {
+      "name": "符号",
+      "value": 3
+    },
+    {
+      "name": "记号",
+      "value": 4
+    },
+    {
+      "name": "标示",
+      "value": 3
+    },
+    {
+      "name": "铭牌",
+      "value": 4
+    },
+    {
+      "name": "徽标",
+      "value": 4
+    },
+    {
+      "name": "标牌",
+      "value": 3
+    },
+    {
+      "name": "品牌",
+      "value": 3
+    },
+    {
+      "name": "商标",
+      "value": 2
+    },
+    {
+      "name": "商号",
+      "value": 2
+    },
+    {
+      "name": "牌子",
+      "value": 2
+    },
+    {
+      "name": "标价",
+      "value": 2
+    },
+    {
+      "name": "价格",
+      "value": 3
+    },
+    {
+      "name": "贴纸",
+      "value": 3
+    },
+    {
+      "name": "地图",
+      "value": 2
+    },
+    {
+      "name": "导航",
+      "value": 2
+    },
+    {
+      "name": "路牌",
+      "value": 2
+    },
+    {
+      "name": "路标",
+      "value": 2
+    },
+    {
+      "name": "指示",
+      "value": 1
+    },
+    {
+      "name": "提示",
+      "value": 1
+    },
+    {
+      "name": "座标",
+      "value": 2
+    },
+    {
+      "name": "坐标",
+      "value": 1
+    },
+    {
+      "name": "标签页",
+      "value": 3
+    },
+    {
+      "name": "选项卡",
+      "value": 3
+    },
+    {
+      "name": "LOGO",
+      "value": 2
+    },
+    {
+      "name": "二维码",
+      "value": 2
+    },
+    {
+      "name": "条形码",
+      "value": 3
+    }
+  ],
+  "纸张": [
+    {
+      "name": "纸张",
+      "value": 5
+    },
+    {
+      "name": "纸",
+      "value": 5
+    },
+    {
+      "name": "纸品",
+      "value": 4
+    },
+    {
+      "name": "纸材",
+      "value": 4
+    },
+    {
+      "name": "纸料",
+      "value": 3
+    },
+    {
+      "name": "纸样",
+      "value": 4
+    },
+    {
+      "name": "原纸",
+      "value": 3
+    },
+    {
+      "name": "板纸",
+      "value": 4
+    },
+    {
+      "name": "纸板",
+      "value": 4
+    },
+    {
+      "name": "纸箱",
+      "value": 3
+    },
+    {
+      "name": "纸袋",
+      "value": 3
+    },
+    {
+      "name": "文化用纸",
+      "value": 2
+    },
+    {
+      "name": "印刷纸",
+      "value": 2
+    },
+    {
+      "name": "书写纸",
+      "value": 2
+    },
+    {
+      "name": "包装纸",
+      "value": 2
+    },
+    {
+      "name": "造纸",
+      "value": 3
+    },
+    {
+      "name": "生产",
+      "value": 3
+    },
+    {
+      "name": "加工",
+      "value": 2
+    },
+    {
+      "name": "来料",
+      "value": 2
+    },
+    {
+      "name": "采购",
+      "value": 2
+    },
+    {
+      "name": "销售",
+      "value": 2
+    },
+    {
+      "name": "订货",
+      "value": 1
+    },
+    {
+      "name": "报价",
+      "value": 1
+    },
+    {
+      "name": "标样本",
+      "value": 2
+    },
+    {
+      "name": "样品",
+      "value": 1
+    },
+    {
+      "name": "纸张尺寸",
+      "value": 3
+    },
+    {
+      "name": "纸张规格",
+      "value": 3
+    },
+    {
+      "name": "纸质",
+      "value": 2
+    },
+    {
+      "name": "纸强",
+      "value": 2
+    },
+    {
+      "name": "克重",
+      "value": 3
+    }
+  ],
+  "美术": [
+    {
+      "name": "美术",
+      "value": 5
+    },
+    {
+      "name": "艺术",
+      "value": 5
+    },
+    {
+      "name": "绘画",
+      "value": 4
+    },
+    {
+      "name": "绘画",
+      "value": 4
+    },
+    {
+      "name": "绘图",
+      "value": 3
+    },
+    {
+      "name": "美术设计",
+      "value": 4
+    },
+    {
+      "name": "平面设计",
+      "value": 3
+    },
+    {
+      "name": "美术理论",
+      "value": 4
+    },
+    {
+      "name": "美术史",
+      "value": 4
+    },
+    {
+      "name": "素描",
+      "value": 3
+    },
+    {
+      "name": "色彩",
+      "value": 3
+    },
+    {
+      "name": "构图",
+      "value": 2
+    },
+    {
+      "name": "expression",
+      "value": 2
+    },
+    {
+      "name": "proportions",
+      "value": 2
+    },
+    {
+      "name": "chiaroscuro",
+      "value": 2
+    },
+    {
+      "name": "medium",
+      "value": 3
+    },
+    {
+      "name": "technique",
+      "value": 3
+    },
+    {
+      "name": "style",
+      "value": 2
+    },
+    {
+      "name": "period",
+      "value": 2
+    },
+    {
+      "name": "painter",
+      "value": 2
+    },
+    {
+      "name": "sculptor",
+      "value": 2
+    },
+    {
+      "name": "draftsman",
+      "value": 1
+    },
+    {
+      "name": "etching",
+      "value": 1
+    },
+    {
+      "name": "lithograph",
+      "value": 2
+    },
+    {
+      "name": "linocut",
+      "value": 1
+    },
+    {
+      "name": "monotype",
+      "value": 3
+    },
+    {
+      "name": "watercolour",
+      "value": 3
+    },
+    {
+      "name": "gouache",
+      "value": 2
+    },
+    {
+      "name": "acrylic",
+      "value": 2
+    },
+    {
+      "name": "oil paint",
+      "value": 3
+    }
+  ],
+  "设备": [
+    {
+      "name": "设备",
+      "value": 5
+    },
+    {
+      "name": "仪器",
+      "value": 5
+    },
+    {
+      "name": "机械",
+      "value": 4
+    },
+    {
+      "name": "工具",
+      "value": 4
+    },
+    {
+      "name": "器材",
+      "value": 3
+    },
+    {
+      "name": "装置",
+      "value": 4
+    },
+    {
+      "name": "设施",
+      "value": 3
+    },
+    {
+      "name": "机构",
+      "value": 4
+    },
+    {
+      "name": "机械器具",
+      "value": 4
+    },
+    {
+      "name": "生产设备",
+      "value": 3
+    },
+    {
+      "name": "加工设备",
+      "value": 3
+    },
+    {
+      "name": "移动设备",
+      "value": 2
+    },
+    {
+      "name": "运输设备",
+      "value": 2
+    },
+    {
+      "name": "传送设备",
+      "value": 2
+    },
+    {
+      "name": "控制设备",
+      "value": 2
+    },
+    {
+      "name": "监控设备",
+      "value": 3
+    },
+    {
+      "name": "测量设备",
+      "value": 3
+    },
+    {
+      "name": "测试设备",
+      "value": 2
+    },
+    {
+      "name": "修理设备",
+      "value": 2
+    },
+    {
+      "name": "设备部件",
+      "value": 2
+    },
+    {
+      "name": "零部件",
+      "value": 2
+    },
+    {
+      "name": "配件",
+      "value": 1
+    },
+    {
+      "name": "部件",
+      "value": 1
+    },
+    {
+      "name": "结构",
+      "value": 2
+    },
+    {
+      "name": "框架",
+      "value": 1
+    },
+    {
+      "name": "机架",
+      "value": 3
+    },
+    {
+      "name": "支架",
+      "value": 3
+    },
+    {
+      "name": "底架",
+      "value": 2
+    },
+    {
+      "name": "设备外形",
+      "value": 2
+    },
+    {
+      "name": "功率",
+      "value": 3
+    }
+  ],
+  "设备": [
+    {
+      "name": "设备",
+      "value": 5
+    },
+    {
+      "name": "仪器",
+      "value": 5
+    },
+    {
+      "name": "机械",
+      "value": 4
+    },
+    {
+      "name": "工具",
+      "value": 4
+    },
+    {
+      "name": "器材",
+      "value": 3
+    },
+    {
+      "name": "装置",
+      "value": 4
+    },
+    {
+      "name": "设施",
+      "value": 3
+    },
+    {
+      "name": "机构",
+      "value": 4
+    },
+    {
+      "name": "机械器具",
+      "value": 4
+    },
+    {
+      "name": "生产设备",
+      "value": 3
+    },
+    {
+      "name": "加工设备",
+      "value": 3
+    },
+    {
+      "name": "移动设备",
+      "value": 2
+    },
+    {
+      "name": "运输设备",
+      "value": 2
+    },
+    {
+      "name": "传送设备",
+      "value": 2
+    },
+    {
+      "name": "控制设备",
+      "value": 2
+    },
+    {
+      "name": "监控设备",
+      "value": 3
+    },
+    {
+      "name": "测量设备",
+      "value": 3
+    },
+    {
+      "name": "测试设备",
+      "value": 2
+    },
+    {
+      "name": "修理设备",
+      "value": 2
+    },
+    {
+      "name": "设备部件",
+      "value": 2
+    },
+    {
+      "name": "零部件",
+      "value": 2
+    },
+    {
+      "name": "配件",
+      "value": 1
+    },
+    {
+      "name": "部件",
+      "value": 1
+    },
+    {
+      "name": "结构",
+      "value": 2
+    },
+    {
+      "name": "框架",
+      "value": 1
+    },
+    {
+      "name": "机架",
+      "value": 3
+    },
+    {
+      "name": "支架",
+      "value": 3
+    },
+    {
+      "name": "底架",
+      "value": 2
+    },
+    {
+      "name": "设备外形",
+      "value": 2
+    },
+    {
+      "name": "功率",
+      "value": 3
+    }
+  ],
+  "桌子": [
+    {
+      "name": "桌子",
+      "value": 5
+    },
+    {
+      "name": "桌",
+      "value": 5
+    },
+    {
+      "name": "台面",
+      "value": 4
+    },
+    {
+      "name": "桌面",
+      "value": 4
+    },
+    {
+      "name": "桌板",
+      "value": 3
+    },
+    {
+      "name": "桌腿",
+      "value": 4
+    },
+    {
+      "name": "支脚",
+      "value": 3
+    },
+    {
+      "name": "桌架",
+      "value": 4
+    },
+    {
+      "name": "桌架",
+      "value": 4
+    },
+    {
+      "name": "书桌",
+      "value": 3
+    },
+    {
+      "name": "办公桌",
+      "value": 3
+    },
+    {
+      "name": "会议桌",
+      "value": 2
+    },
+    {
+      "name": "餐桌",
+      "value": 2
+    },
+    {
+      "name": "茶几",
+      "value": 2
+    },
+    {
+      "name": "电脑桌",
+      "value": 2
+    },
+    {
+      "name": "工作台",
+      "value": 3
+    },
+    {
+      "name": "实验台",
+      "value": 3
+    },
+    {
+      "name": "料理台",
+      "value": 2
+    },
+    {
+      "name": "台式机",
+      "value": 2
+    },
+    {
+      "name": "主机",
+      "value": 2
+    },
+    {
+      "name": "CPU",
+      "value": 2
+    },
+    {
+      "name": "显示器",
+      "value": 1
+    },
+    {
+      "name": "键盘",
+      "value": 1
+    },
+    {
+      "name": "鼠标",
+      "value": 2
+    },
+    {
+      "name": "图像",
+      "value": 1
+    },
+    {
+      "name": "显示",
+      "value": 3
+    },
+    {
+      "name": "扬声器",
+      "value": 3
+    },
+    {
+      "name": "音箱",
+      "value": 2
+    },
+    {
+      "name": "摄像头",
+      "value": 2
+    },
+    {
+      "name": "设备",
+      "value": 3
+    }
+  ]
+}

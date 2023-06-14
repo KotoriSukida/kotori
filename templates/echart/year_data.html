@@ -1,19 +1,19 @@
-{% load static %}
+   {% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
-    <link href="{% static 'css/main.css' %}" rel="stylesheet">
-    {#    引入相关js文件#}
-    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
-    <script src="{% static 'js/echarts.min.js' %}"></script>
-    <script src="{% static 'js/echarts-wordcloud.min.js' %}"></script>
-     <script src="{% static 'js/jquery.js' %}"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+
+
+    <script src={% static 'js/echarts.min.js' %}></script>
+    <script src={% static 'js/jquery.js' %}></script>
+    <link rel="stylesheet" href={% static 'css/year.css' %} rel="stylesheet">
+     <link href="{% static 'css/main.css' %}" rel="stylesheet">
 </head>
 <body>
-{#导航栏#}
 <nav class="navbar navbar-expand-lg navbar-light bg-white">
     <div class="container">
         <!-- Brand -->
@@ -50,8 +50,7 @@
                         客户数据
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="segment_data">用户机构</a></li>
-                        <li><a class="dropdown-item" href="customer_data">rfm</a></li>
+                        <li><a class="dropdown-item" href="segmnet_data">用户机构</a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
@@ -78,14 +77,39 @@
         </div>
     </div>
 </nav>
-
- <div id="main">
-
-        {% block content %}
-
-        {% endblock %}
+    <script>
+        var year_month_data={{year_month_Json|safe}};
+        var year_Sales_table_data = {{year_sales_Json|safe}}
+    </script>
+    <div id="col_01">
+        <table class="table">
+            <thead class="headtr">
+                <tr>
+                    <th scope="col">年</th>
+                    <th scope="col">销售额（万）</th>
+                    <th scope="col">利润（万）</th>
+                    <th scope="col">利润率</th>
+                    <th scope="col">卖出商品数</th>
+                    <th scope="col">订单数</th>
+                    <th scope="col">平均折扣</th>
+                    <th scope="col">客单价</th>
+                </tr>
+            </thead>
+            <tbody id="tobody">
+            </tbody>
+        </table>
     </div>
-
-
+    <div id="col_02">
+        <div id="col_02_01"></div>
+        <div id="col_02_02"></div>
+    </div>
+    <div id="col_03">
+        <div id="col_03_01"></div>
+        <div id="col_03_02"></div>
+        <div id="col_03_03"></div>
+        <div id="col_03_04"></div>
+    </div>
+    <script src={% static 'js/year_sales.js' %}></script>
 </body>
+
 </html>

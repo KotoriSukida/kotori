@@ -4,16 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
-    <link href="{% static 'css/main.css' %}" rel="stylesheet">
-    {#    引入相关js文件#}
-    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
-    <script src="{% static 'js/echarts.min.js' %}"></script>
-    <script src="{% static 'js/echarts-wordcloud.min.js' %}"></script>
-     <script src="{% static 'js/jquery.js' %}"></script>
+       <script src={% static 'js/echarts.min.js' %}></script>
+     <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+    <script src={% static 'js/jquery.js' %}></script>
+     <link href="{% static 'css/main.css' %}" rel="stylesheet">
+     <link href="{% static 'css/customer_data.css' %}" rel="stylesheet">
 </head>
 <body>
-{#导航栏#}
 <nav class="navbar navbar-expand-lg navbar-light bg-white">
     <div class="container">
         <!-- Brand -->
@@ -55,17 +52,6 @@
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown"
-                       aria-expanded="false">
-                        客户数据
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="areaOfuser">地区</a></li>
-                        <li><a class="dropdown-item" href="header">头部客户名单</a></li>
-                        <li><a class="dropdown-item" href="rfm">RFM</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                        aria-expanded="false">
                         快递数据
@@ -78,14 +64,39 @@
         </div>
     </div>
 </nav>
+<script>
+  var mSetData = {{ mSetJson| safe}};
+  var fSetData = {{ fSetJson| safe}};
+  var rfmRData = {{ rfmRJson| safe}};
+  var rfmSumData = {{ rfmSumJson| safe}};
+  var rfmData = {{ rfm_data| safe}};
+  var paretoData = {{ pareto_data| safe}};
+</script>
+<div class="main">
+  <div class="left">
+    <div id="pareto"></div>
+    <div id="rfmsum"></div>
+    <div id="rfm_r"></div>
+    <div id="rfm_f"></div>
+    <div id="rfm_m"></div>
+  </div>
+  <div class="right" id="right">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">客户 ID</th>
+          <th scope="col">R</th>
+          <th scope="col">F</th>
+          <th scope="col">M</th>
+        </tr>
+      </thead>
+      <tbody id="tobody">
+      </tbody>
+    </table>
+  </div>
+</div>
 
- <div id="main">
-
-        {% block content %}
-
-        {% endblock %}
-    </div>
-
-
+<script src={% static 'js/customerData.js' %}></script>
 </body>
 </html>

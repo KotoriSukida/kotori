@@ -1,0 +1,259 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div style="width: 100%;height: 1600px;display: flex">
+    <div id="col_01" style="height: 100%;width: 40%"></div>
+    <div id="col_02" style="height: 100%;width: 60%"></div>
+</div>
+<script>
+    var category_Pie =
+    {{category_Pie_data|safe}}
+    var category_tar =
+    {{category_tar_data|safe}}
+    //第一个饼图
+    var myechart1 = echarts.init(document.getElementById("col_02"))
+    option1 = {
+        title: [{
+            text: '2018年子类销售数据',
+            left: '12%',
+            textAlign: 'center',
+        }, {
+            text: '2017年子类销售数据',
+            left: '12%',
+            top: '25%',
+            textAlign: 'center',
+        }, {
+            text: '2016年子类销售数据',
+            left: '12%',
+            top: '50%',
+            textAlign: 'center',
+        }, {
+            text: '2015年子类销售数据',
+            left: '12%',
+            top: '75%',
+            textAlign: 'center',
+        },],
+        legend: {},
+        yAxis: [
+            {
+                type: 'category',
+                data: category_tar.y2018.subcategory,
+                gridIndex: 0
+            }, {
+                type: 'category',
+                data: category_tar.y2017.subcategory,
+                gridIndex: 1
+            }, {
+                type: 'category',
+                data: category_tar.y2016.subcategory,
+                gridIndex: 2
+            }, {
+                type: 'category',
+                data: category_tar.y2015.subcategory,
+                gridIndex: 3
+            }
+        ],
+        xAxis: [{
+            name: "销售额（万）",
+            type: 'value',
+            gridIndex: 0
+        }, {
+            name: "利润（万）",
+            type: 'value',
+            position: 'top',
+            gridIndex: 0
+        }, {
+            name: "销售额（万）",
+            type: 'value',
+            gridIndex: 1
+        }, {
+            name: "利润（万）",
+            type: 'value',
+            position: 'top',
+            gridIndex: 1
+        }, {
+            name: "销售额（万）",
+            type: 'value',
+            gridIndex: 2
+        }, {
+            name: "利润（万）",
+            type: 'value',
+            position: 'top',
+            gridIndex: 2
+        }, {
+            name: "销售额（万）",
+            type: 'value',
+            gridIndex: 3
+        }, {
+            name: "利润（万）",
+            type: 'value',
+            position: 'top',
+            gridIndex: 3
+        }],
+        grid: [{
+            width: '85%',
+            height: '15%',
+            top: '5%',
+            left: '15%'
+
+        }, {
+            width: '85%',
+            height: '15%',
+            top: '30%',
+            left: '15%'
+
+        }, {
+            width: '85%',
+            height: '15%',
+            top: '55%',
+            left: '15%'
+
+        }, {
+            width: '85%',
+            height: '15%',
+            top: '80%',
+            left: '15%'
+
+        }],
+        series: [
+            {
+                name: "销售额",
+                data: category_tar.y2018.sale,
+                type: 'bar',
+                xAxisIndex: 0,
+                yAxisIndex: 0,
+                showBackground: true,
+            }, {
+                name: "利润",
+                data: category_tar.y2018.profit,
+                type: 'bar',
+                xAxisIndex: 1,
+                yAxisIndex: 0,
+                showBackground: true,
+            }, {
+                name: "销售额",
+                data: category_tar.y2017.sale,
+                type: 'bar',
+                xAxisIndex: 2,
+                yAxisIndex: 1,
+                showBackground: true,
+            }, {
+                name: "利润",
+                data: category_tar.y2017.profit,
+                type: 'bar',
+                xAxisIndex: 3,
+                yAxisIndex: 1,
+                showBackground: true,
+            }, {
+                name: "销售额",
+                data: category_tar.y2016.sale,
+                type: 'bar',
+                xAxisIndex: 4,
+                yAxisIndex: 2,
+                showBackground: true,
+            }, {
+                name: "利润",
+                data: category_tar.y2016.profit,
+                type: 'bar',
+                xAxisIndex: 5,
+                yAxisIndex: 2,
+                showBackground: true,
+            }, {
+                name: "销售额",
+                data: category_tar.y2015.sale,
+                type: 'bar',
+                xAxisIndex: 6,
+                yAxisIndex: 3,
+                showBackground: true,
+            }, {
+                name: "利润",
+                data: category_tar.y2015.profit,
+                type: 'bar',
+                xAxisIndex: 7,
+                yAxisIndex: 3,
+                showBackground: true,
+            }
+        ]
+    };
+    //第二个条形图
+    var myechart2 = echarts.init(document.getElementById("col_01"))
+    option2 = {
+        tooltip: {
+            trigger: 'item'
+        },
+        legend: {
+            left: 0,
+            orient: "vertical",
+            top: "5%"
+        },
+        title: [{
+            text: "2018各品类销售占比",
+        }, {
+            text: "2017各品类销售占比",
+            top: '25%',
+            left: "3%"
+        }, {
+            text: "2016各品类销售占比",
+            top: '50%',
+            left: "3%"
+        }, {
+            text: "2015各品类销售占比",
+            top: '75%',
+            left: "3%"
+        }],
+        series: [
+            {
+                type: 'pie',
+                radius: '30%',
+                center: ['50%', '13%'],
+                data: category_Pie.y2018,
+                label: {
+                    normal: {
+                        show: true,
+                        position: 'inner',
+                        formatter: '{b}\n{c}\n{d}%',
+                    },
+                },
+            }, {
+                type: 'pie',
+                radius: '30%',
+                center: ['50%', '38%'],
+                data: category_Pie.y2017,
+                label: {
+                    normal: {
+                        show: true,
+                        position: 'inner',
+                        formatter: '{b}\n{c}\n{d}%',
+                    },
+                },
+            }, {
+                type: 'pie',
+                radius: '30%',
+                center: ['50%', '63%'],
+                data: category_Pie.y2016,
+                label: {
+                    normal: {
+                        show: true,
+                        position: 'inner',
+                        formatter: '{b}\n{c}\n{d}%',
+                    },
+                },
+            }, {
+                type: 'pie',
+                radius: '30%',
+                center: ['50%', '88%'],
+                data: category_Pie.y2015,
+                label: {
+                    normal: {
+                        show: true,
+                        position: 'inner',
+                        formatter: '{b}\n{c}\n{d}%',
+                    },
+                },
+            },
+        ]
+    };
+    myechart1.setOption(option1)
+    myechart2.setOption(option2);
+</script>
+{% endblock content %}

@@ -2,24 +2,58 @@ from django.db import models
 
 
 # Create your models here.
-class Sale(models.Model):
-    line_ID = models.IntegerField()
-    order_ID = models.CharField(max_length=100)
-    order_Date = models.CharField(max_length=100)
-    sent_Date = models.CharField(max_length=100)
-    post_Way = models.IntegerField()
-    customer_ID = models.CharField(max_length=100)
-    customer_Name = models.CharField(max_length=100)
-    split = models.IntegerField()
-    city = models.CharField(max_length=100)
-    province = models.CharField(max_length=100)
-    country = models.CharField(max_length=100)
-    area = models.CharField(max_length=100)
-    product_ID = models.CharField(max_length=100)
-    series = models.CharField(max_length=100)
-    son_Series = models.CharField(max_length=100)
-    product_Name = models.CharField(max_length=100)
-    sales_Total = models.DecimalField(max_digits=11, decimal_places=2)
-    product_Num = models.IntegerField()
-    discount = models.DecimalField(max_digits=6, decimal_places=2)
-    profit = models.DecimalField(max_digits=12, decimal_places=2)
+class ParetoRate(models.Model):
+    customer_id = models.CharField(max_length=20)
+    Pareto_rate = models.FloatField()
+    customer_count = models.FloatField()
+
+
+class rfm(models.Model):
+    customer_id = models.CharField(max_length=20)
+    r_data = models.IntegerField()
+    f_data = models.IntegerField()
+    m_data = models.FloatField()
+    customer_type = models.CharField(max_length=20)
+
+
+class visualizationdata01(models.Model):
+    year = models.CharField(max_length=5)
+    sales = models.FloatField()
+    profit = models.FloatField()
+    profitrate = models.FloatField()
+    count = models.IntegerField()
+    numberOrder = models.IntegerField()
+    averageDiscount = models.FloatField()
+    guestListPrice = models.FloatField()
+
+
+class visualizationdata01_month(models.Model):
+    year = models.CharField(max_length=5)
+    month = models.IntegerField()
+    sales = models.FloatField()
+    count = models.IntegerField()
+    profit = models.FloatField()
+
+
+class segment_datatable(models.Model):
+    region = models.CharField(max_length=5)
+    province = models.CharField(max_length=5)
+    city = models.CharField(max_length=5)
+    cutomer_type = models.CharField(max_length=5)
+    count = models.IntegerField()
+
+
+class category_saleDataTable(models.Model):
+    year = models.CharField(max_length=5)
+    category = models.CharField(max_length=8)
+    subCategory = models.CharField(max_length=8)
+    sale = models.FloatField()
+    profit = models.FloatField()
+
+
+class shipData(models.Model):
+    shiplevel = models.CharField(max_length=5)
+    shipregion = models.CharField(max_length=5)
+    shipDay = models.FloatField()
+    shipYear = models.CharField(max_length=5)
+    shipNumber = models.IntegerField()

@@ -3,17 +3,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <script src={% static 'js/echarts.min.js' %}></script>
+     <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+    <script src={% static 'js/jquery.js' %}></script>
+     <link href="{% static 'css/main.css' %}" rel="stylesheet">
+     <link href="{% static 'css/segment_data.css' %}" rel="stylesheet">
     <title>Title</title>
-    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
-    <link href="{% static 'css/main.css' %}" rel="stylesheet">
-    {#    引入相关js文件#}
-    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
-    <script src="{% static 'js/echarts.min.js' %}"></script>
-    <script src="{% static 'js/echarts-wordcloud.min.js' %}"></script>
-     <script src="{% static 'js/jquery.js' %}"></script>
 </head>
 <body>
-{#导航栏#}
 <nav class="navbar navbar-expand-lg navbar-light bg-white">
     <div class="container">
         <!-- Brand -->
@@ -51,20 +48,9 @@
                     </a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="segment_data">用户机构</a></li>
-                        <li><a class="dropdown-item" href="customer_data">rfm</a></li>
                     </ul>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown"
-                       aria-expanded="false">
-                        客户数据
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="areaOfuser">地区</a></li>
-                        <li><a class="dropdown-item" href="header">头部客户名单</a></li>
-                        <li><a class="dropdown-item" href="rfm">RFM</a></li>
-                    </ul>
-                </li>
+
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                        aria-expanded="false">
@@ -78,14 +64,20 @@
         </div>
     </div>
 </nav>
-
- <div id="main">
-
-        {% block content %}
-
-        {% endblock %}
+<script>
+        var segment_bar_Data_02={{ segment_Bar_Json_02| safe}}
+        var segment_Pie_Data = {{ segment_Pie_Json| safe}}
+        var segment_Bar_Data_01 = {{ segment_Bar_Json_01| safe}}
+    </script>
+    <div id="row_01">
+        <div id="pie"></div>
+        <div id="bar_01"></div>
+    </div>
+    <div id="row_02">
+        <div id="bar_02"></div>
+        <div id="bar_03"></div>
     </div>
 
-
+    <script src={% static 'js/segment_data.js' %}></script>
 </body>
 </html>
