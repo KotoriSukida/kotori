@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>数据可视化</title>
        <script src={% static 'js/echarts.min.js' %}></script>
      <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
     <script src={% static 'js/jquery.js' %}></script>
@@ -26,8 +26,8 @@
                         销售数据
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="year_data/">全国业绩</a></li>
-                        <li><a class="dropdown-item" href="region_province">地区和省份</a></li>
+                        <li><a class="dropdown-item" href="http://127.0.0.1:8000/year_data/">全国业绩</a></li>
+                        <li><a target="_blank" class="dropdown-item" href="http://127.0.0.1:8000/region/">省份,地区</a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
@@ -36,9 +36,9 @@
                         产品数据
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="category_sale">产品占比与子类别</a></li>
-                        <li><a class="dropdown-item" href="price_area">价格区间</a></li>
-                        <li><a class="dropdown-item" href="hot_good">明星产品</a></li>
+                        <li><a  class="dropdown-item" href="http://127.0.0.1:8000/category_sale">产品占比与子类别</a></li>
+                        <li><a class="dropdown-item" href="http://127.0.0.1:8000/price_area">价格区间</a></li>
+                        <li><a class="dropdown-item" href="http://127.0.0.1:8000/hot_good">明星产品</a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
@@ -47,17 +47,17 @@
                         客户数据
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="segment_data">用户机构</a></li>
-                        <li><a class="dropdown-item" href="customer_data">rfm</a></li>
+                        <li><a class="dropdown-item" href="http://127.0.0.1:8000/segment_data">用户机构</a></li>
                     </ul>
                 </li>
+
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                        aria-expanded="false">
                         快递数据
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="ship">邮寄方式</a></li>
+                        <li><a class="dropdown-item" href="http://127.0.0.1:8000/ship">邮寄方式</a></li>
                     </ul>
                 </li>
             </ul>

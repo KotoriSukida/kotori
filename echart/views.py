@@ -6,7 +6,6 @@ from echart.models import ParetoRate, rfm, visualizationdata01, visualizationdat
     category_saleDataTable, shipData
 from django.db.models import Count, Sum, F
 import json
-import numpy as np
 import pandas as pd
 
 
@@ -96,7 +95,7 @@ def customer_data(request):
                    "fSetJson": fSetJson, "mSetJson": mSetJson})
 
 
-def year_sales(request):
+def year_data(request):
     # 可视化01
     year_sales_Data = {"year": [], "sale": [], "profit": [], "profitrate": [], "count": [], "numberOrder": [],
                        "averageDiscount": [], "guestListPrice": []}
@@ -230,7 +229,7 @@ def segment_data(request):
 def loadParetoData(request):
     import pandas as pd
     df = pd.read_csv('E:\code\shixun\导入订单utf8.csv', index_col=0)
-    # 2. RFM模型: 衡量客户价值和客户创造利益能力，并可视化
+    # 2. RFM模型:
     ##2.1计算用户最后一次消费
     ### 根据客户id分类
     data_r = df[['客户 ID', '订单日期']]
@@ -291,19 +290,7 @@ def loadParetoData(request):
         rfm.objects.create(customer_id=row['客户 ID'], r_data=row['R'], f_data=row['F'], m_data=row['M'],
                            customer_type=row['客户类型'])
 
-    # 3帕累托法则
-
-    # Pareto_data = df.groupby('客户 ID')['销售额'].sum().reset_index(name="销售总额").sort_values(by=['销售总额'],ascending=False)
-    # # #计算累计营收占比
-    # Pareto_rate=Pareto_data[['客户 ID']]
-    # Pareto_data["count"]=1
-    # Pareto_rate['rate']=Pareto_data['销售总额'].cumsum()/Pareto_data['销售总额'].sum()
-    # Pareto_rate["客户数"]=Pareto_data['count'].cumsum()/Pareto_data['count'].sum()
-
-    # for index, row in Pareto_rate.iterrows():
-    #     ParetoRate.objects.create(customer_id=row['客户 ID'],Pareto_rate=row['rate'],customer_count=row["客户数"])
-
-    return HttpResponse("完成")
+    return HttpResponse("200")
 
 
 def visualization01(request):
@@ -333,7 +320,7 @@ def visualization01(request):
     for index, row in groupmonth.iterrows():
         visualizationdata01_month.objects.create(year=row['年'], month=row['月'], sales=row['销售额'],
                                                  count=row['数量'], profit=row['利润'])
-    return HttpResponse("okk")
+    return HttpResponse("200")
 
 def load_segment_data(request):
     import pandas as pd
@@ -346,7 +333,7 @@ def load_segment_data(request):
         segment_datatable.objects.create(cutomer_type=row["客户类型"], city=row["城市"], province=row['省/自治区'],
                                          region=row['地区'], count=row["细分"])
 
-    return HttpResponse("okk")
+    return HttpResponse("200")
 
 
 def load_category_sale_data(request):
@@ -357,7 +344,7 @@ def load_category_sale_data(request):
     for index, row in category_sale.iterrows():
         category_saleDataTable.objects.create(year=row["年"], category=row['类别'], subCategory=row["子类别"],
                                               sale=row["销售额"], profit=row["利润"])
-    return HttpResponse("okk")
+    return HttpResponse("200")
 
 
 def load_shipData(request):
@@ -374,4 +361,4 @@ def load_shipData(request):
         shipData.objects.create(shiplevel=row["邮寄方式"], shipregion=row["省/自治区"], shipDay=row["天"],
                                 shipYear=row["年"])
 
-    return HttpResponse("okk")
+    return HttpResponse("200")
