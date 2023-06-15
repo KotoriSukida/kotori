@@ -12,17 +12,22 @@ import pandas as pd
 def index(request):
     return render(request, "echart/index.html")
 
+
 def ship(request):
-    return  render(request,'echart/ship.html')
+    return render(request, 'echart/ship.html')
+
 
 def hot_good(request):
-    return  render(request,'echart/hot_good.html')
+    return render(request, 'echart/hot_good.html')
+
 
 def region(request):
-    return  render(request,'echart/region.html')
+    return render(request, 'echart/region.html')
+
 
 def pricearea(request):
-    return  render(request,'echart/price_area.html')
+    return render(request, 'echart/price_area.html')
+
 
 def customer_data(request):
     # 3.帕累托法则
@@ -96,7 +101,7 @@ def customer_data(request):
 
 
 def year_data(request):
-    # 可视化01
+    # 可视化-1
     year_sales_Data = {"year": [], "sale": [], "profit": [], "profitrate": [], "count": [], "numberOrder": [],
                        "averageDiscount": [], "guestListPrice": []}
     year_sales_Set = visualizationdata01.objects.all().values()
@@ -110,7 +115,7 @@ def year_data(request):
         year_sales_Data["averageDiscount"].append(round(i["averageDiscount"] * 100, 2))
         year_sales_Data["guestListPrice"].append(i["guestListPrice"])
     year_sales_Json = json.dumps(year_sales_Data, ensure_ascii=False)
-    # 可视化02
+    # 可视化-2
     year_month_Data = {"year": [], "sale": [[], [], [], []]
         , "count": [[], [], [], []]
         , "profit": [[], [], [], []]
@@ -123,7 +128,8 @@ def year_data(request):
         year_month_Data["profit"][int(i["year"]) % 2015].append(round(i["profit"] / 10000, 2))
     year_month_Json = json.dumps(year_month_Data, ensure_ascii=False)
 
-    return render(request, "echart/year_data.html", {"year_sales_Json": year_sales_Json, "year_month_Json": year_month_Json})
+    return render(request, "echart/year_data.html",
+                  {"year_sales_Json": year_sales_Json, "year_month_Json": year_month_Json})
 
 
 def category_sale(request):
@@ -219,8 +225,8 @@ def segment_data(request):
     segment_Bar_Json_02 = json.dumps(segment_bar_Data_02, ensure_ascii=False)
 
     return render(request, "echart/segment_data.html", {"segment_Pie_Json": segment_Pie_Json,
-                                                 "segment_Bar_Json_01": segment_Bar_Json_01,
-                                                 "segment_Bar_Json_02": segment_Bar_Json_02})
+                                                        "segment_Bar_Json_01": segment_Bar_Json_01,
+                                                        "segment_Bar_Json_02": segment_Bar_Json_02})
 
 
 ################################
@@ -304,7 +310,7 @@ def visualization01(request):
     groupYear['利润率'] = groupYear['利润'] / (groupYear['销售额'] - groupYear['利润'])
     groupYear['卖出商品数'] = df.groupby(['年'])['数量'].sum().reset_index()['数量']
     groupYear['订单数'] = \
-    df.groupby(['年', '订单 ID', '客户 ID']).count().reset_index()['年'].value_counts().reset_index()['count']
+        df.groupby(['年', '订单 ID', '客户 ID']).count().reset_index()['年'].value_counts().reset_index()['count']
     groupYear['平均折扣'] = 1 - df.groupby(['年'])['折扣'].mean().reset_index()['折扣']
     groupYear['客单价'] = 1
 
@@ -321,6 +327,7 @@ def visualization01(request):
         visualizationdata01_month.objects.create(year=row['年'], month=row['月'], sales=row['销售额'],
                                                  count=row['数量'], profit=row['利润'])
     return HttpResponse("200")
+
 
 def load_segment_data(request):
     import pandas as pd
