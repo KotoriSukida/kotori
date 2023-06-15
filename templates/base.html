@@ -3,14 +3,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>123</title>
     <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
     <link href="{% static 'css/main.css' %}" rel="stylesheet">
-    {#    引入相关js文件#}
+    {#引入相关js文件#}
     <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
     <script src="{% static 'js/echarts.min.js' %}"></script>
     <script src="{% static 'js/echarts-wordcloud.min.js' %}"></script>
-     <script src="{% static 'js/jquery.js' %}"></script>
+    <script src="{% static 'js/jquery.js' %}"></script>
 </head>
 <body>
 {#导航栏#}
@@ -18,7 +18,7 @@
     <div class="container">
         <!-- Brand -->
         <a class="navbar-brand" href="/">
-            <strong><h2>数据可视乎</h2></strong>
+            <strong><h2>数据可视化</h2></strong>
         </a>
       <!-- Collapse -->
         <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -30,48 +30,37 @@
                     </a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="year_data/">全国业绩</a></li>
-                        <li><a class="dropdown-item" href="region_province">地区和省份</a></li>
+                        <li><a class="dropdown-item" href="region/">省份,地区</a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    <a class="nav-link dropdown-toggle" href="/" role="button" data-bs-toggle="dropdown"
                        aria-expanded="false">
                         产品数据
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="category_sale">产品占比与子类别</a></li>
-                        <li><a class="dropdown-item" href="price_area">价格区间</a></li>
-                        <li><a class="dropdown-item" href="hot_good">明星产品</a></li>
+                        <li><a class="dropdown-item" href="category_sale/">产品占比与子类别</a></li>
+                        <li><a class="dropdown-item" href="price_area/">价格区间</a></li>
+                        <li><a class="dropdown-item" href="hot_good/">明星产品</a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    <a class="nav-link dropdown-toggle" href="/" role="button" data-bs-toggle="dropdown"
                        aria-expanded="false">
                         客户数据
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="segment_data">用户机构</a></li>
-                        <li><a class="dropdown-item" href="customer_data">rfm</a></li>
+                        <li><a  class="dropdown-item" href="segment_data/">用户机构</a></li>
+                        <li><a class="dropdown-item" href="customer_data/">rfm</a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown"
-                       aria-expanded="false">
-                        客户数据
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="areaOfuser">地区</a></li>
-                        <li><a class="dropdown-item" href="header">头部客户名单</a></li>
-                        <li><a class="dropdown-item" href="rfm">RFM</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    <a class="nav-link dropdown-toggle" href="/" role="button" data-bs-toggle="dropdown"
                        aria-expanded="false">
                         快递数据
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="ship">邮寄方式</a></li>
+                        <li><a class="dropdown-item" href="ship/">邮寄方式</a></li>
                     </ul>
                 </li>
             </ul>

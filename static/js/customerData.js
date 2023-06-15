@@ -1,56 +1,56 @@
-//帕累托法则
-(function () {
-  var myecharts = echarts.init(document.getElementById("pareto"))
-  option = {
-    title: {
-      text: '客户贡献(帕累托法则)',
-    },
-    visualMap: {
-      orient: 'vertical',
-      right: 0,
-      top: 'center',
-      calculable: true,
-      min: 0,
-      max: 100,
-      // Map the score column to color
-      // dimension: 0,
-      inRange: {
-        color: ['#65B581', '#FFCE34', '#FD665F']
-      }
-    },
-    xAxis: {
-      type: 'category',
-      data: paretoData.customer_count
-    },
-    yAxis: {
-      name: '销售额%',
-      max: 100,
-      type: 'value'
-    },
-
-    series: [
-      {
-        data: paretoData.Pareto_rate,
-        type: 'bar',
-        showBackground: true,
-        backgroundStyle: {
-          color: 'rgba(180, 180, 180, 0.2)'
-        },
-        markLine: {
-          data: [
-            {
-              yAxis: 20
-            },
-            {
-              yAxis: 80
-            }
-          ]
-        }
-      }
-    ]
-  };
-  myecharts.setOption(option)
-})();
+// //帕累托法则
+// (function () {
+//   var myecharts = echarts.init(document.getElementById("pareto"))
+//   option = {
+//     title: {
+//       text: '客户贡献(帕累托法则)',
+//     },
+//     visualMap: {
+//       orient: 'vertical',
+//       right: 0,
+//       top: 'center',
+//       calculable: true,
+//       min: 0,
+//       max: 100,
+//       // Map the score column to color
+//       // dimension: 0,
+//       inRange: {
+//         color: ['#65B581', '#FFCE34', '#FD665F']
+//       }
+//     },
+//     xAxis: {
+//       type: 'category',
+//       data: paretoData.customer_count
+//     },
+//     yAxis: {
+//       name: '销售额%',
+//       max: 100,
+//       type: 'value'
+//     },
+//
+//     series: [
+//       {
+//         data: paretoData.Pareto_rate,
+//         type: 'bar',
+//         showBackground: true,
+//         backgroundStyle: {
+//           color: 'rgba(180, 180, 180, 0.2)'
+//         },
+//         markLine: {
+//           data: [
+//             {
+//               yAxis: 20
+//             },
+//             {
+//               yAxis: 80
+//             }
+//           ]
+//         }
+//       }
+//     ]
+//   };
+//   myecharts.setOption(option)
+// })();
 
 (function () {
   var tableData = document.getElementById("tobody")

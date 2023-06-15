@@ -6,19 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>index</title>
-
-
+    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
     <script src={% static 'js/echarts.min.js' %}></script>
     <script src={% static 'js/jquery.js' %}></script>
-    <link rel="stylesheet" href={% static 'css/year.css' %} rel="stylesheet">
-     <link href="{% static 'css/main.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href={% static 'css/year.css' %}>
+    <link href="{% static 'css/main.css' %}" rel="stylesheet">
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-white">
     <div class="container">
         <!-- Brand -->
         <a class="navbar-brand" href="/">
-            <strong><h2>数据可视乎</h2></strong>
+            <strong><h2>数据可视化</h2></strong>
         </a>
       <!-- Collapse -->
         <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -30,7 +29,8 @@
                     </a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="year_data/">全国业绩</a></li>
-                        <li><a class="dropdown-item" href="region_province">地区和省份</a></li>
+                        <li><a class="dropdown-item" href="provice/">省份</a></li>
+                        <li><a class="dropdown-item" href="region/">地区</a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
@@ -53,17 +53,17 @@
                         <li><a class="dropdown-item" href="segmnet_data">用户机构</a></li>
                     </ul>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown"
-                       aria-expanded="false">
-                        客户数据
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="areaOfuser">地区</a></li>
-                        <li><a class="dropdown-item" href="header">头部客户名单</a></li>
-                        <li><a class="dropdown-item" href="rfm">RFM</a></li>
-                    </ul>
-                </li>
+{#                <li class="nav-item dropdown">#}
+{#                    <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown"#}
+{#                       aria-expanded="false">#}
+{#                        客户数据#}
+{#                    </a>#}
+{#                    <ul class="dropdown-menu">#}
+{#                        <li><a class="dropdown-item" href="areaOfuser">地区</a></li>#}
+{#                        <li><a class="dropdown-item" href="header">头部客户名单</a></li>#}
+{#                        <li><a class="dropdown-item" href="rfm">RFM</a></li>#}
+{#                    </ul>#}
+{#                </li>#}
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                        aria-expanded="false">
@@ -111,5 +111,4 @@
     </div>
     <script src={% static 'js/year_sales.js' %}></script>
 </body>
-
 </html>

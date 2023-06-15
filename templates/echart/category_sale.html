@@ -33,7 +33,7 @@
             top: '75%',
             textAlign: 'center',
         },],
-        legend: {},
+            legend: {},
         yAxis: [
             {
                 type: 'category',
@@ -122,69 +122,66 @@
                 type: 'bar',
                 xAxisIndex: 0,
                 yAxisIndex: 0,
-                showBackground: true,
+
             }, {
                 name: "利润",
                 data: category_tar.y2018.profit,
                 type: 'bar',
                 xAxisIndex: 1,
                 yAxisIndex: 0,
-                showBackground: true,
+
             }, {
                 name: "销售额",
                 data: category_tar.y2017.sale,
                 type: 'bar',
                 xAxisIndex: 2,
                 yAxisIndex: 1,
-                showBackground: true,
+
             }, {
                 name: "利润",
                 data: category_tar.y2017.profit,
                 type: 'bar',
                 xAxisIndex: 3,
                 yAxisIndex: 1,
-                showBackground: true,
+
             }, {
                 name: "销售额",
                 data: category_tar.y2016.sale,
                 type: 'bar',
                 xAxisIndex: 4,
                 yAxisIndex: 2,
-                showBackground: true,
+
             }, {
                 name: "利润",
                 data: category_tar.y2016.profit,
                 type: 'bar',
                 xAxisIndex: 5,
                 yAxisIndex: 2,
-                showBackground: true,
+
             }, {
                 name: "销售额",
                 data: category_tar.y2015.sale,
                 type: 'bar',
                 xAxisIndex: 6,
                 yAxisIndex: 3,
-                showBackground: true,
+
             }, {
                 name: "利润",
                 data: category_tar.y2015.profit,
                 type: 'bar',
                 xAxisIndex: 7,
                 yAxisIndex: 3,
-                showBackground: true,
+
             }
         ]
     };
-    //第二个条形图
+    //第二个bar
     var myechart2 = echarts.init(document.getElementById("col_01"))
     option2 = {
         tooltip: {
             trigger: 'item'
         },
         legend: {
-            left: 0,
-            orient: "vertical",
-            top: "5%"
         },
         title: [{
             text: "2018各品类销售占比",
@@ -210,8 +207,8 @@
                 label: {
                     normal: {
                         show: true,
-                        position: 'inner',
-                        formatter: '{b}\n{c}\n{d}%',
+
+                        formatter: '{b}\n\n{d}%',
                     },
                 },
             }, {
@@ -222,8 +219,7 @@
                 label: {
                     normal: {
                         show: true,
-                        position: 'inner',
-                        formatter: '{b}\n{c}\n{d}%',
+                        formatter: '{b}\n\n{d}%',
                     },
                 },
             }, {
@@ -234,8 +230,7 @@
                 label: {
                     normal: {
                         show: true,
-                        position: 'inner',
-                        formatter: '{b}\n{c}\n{d}%',
+                        formatter: '{b}\n\n{d}%',
                     },
                 },
             }, {
@@ -246,8 +241,7 @@
                 label: {
                     normal: {
                         show: true,
-                        position: 'inner',
-                        formatter: '{b}\n{c}\n{d}%',
+                        formatter: '{b}\n\n{d}%',
                     },
                 },
             },

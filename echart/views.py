@@ -13,6 +13,17 @@ import pandas as pd
 def index(request):
     return render(request, "echart/index.html")
 
+def ship(request):
+    return  render(request,'echart/ship.html')
+
+def hot_good(request):
+    return  render(request,'echart/hot_good.html')
+
+def region(request):
+    return  render(request,'echart/region.html')
+
+def pricearea(request):
+    return  render(request,'echart/price_area.html')
 
 def customer_data(request):
     # 3.帕累托法则
@@ -213,6 +224,9 @@ def segment_data(request):
                                                  "segment_Bar_Json_02": segment_Bar_Json_02})
 
 
+################################
+# 以下是载入数据的方法
+################################
 def loadParetoData(request):
     import pandas as pd
     df = pd.read_csv('E:\code\shixun\导入订单utf8.csv', index_col=0)

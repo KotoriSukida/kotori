@@ -23,14 +23,14 @@ body{
 }
 
 #row_02{
-    height:800px;
+    height:200px;
     width: 100%;
 }
 #bar_02{
-    height:50%;
+    height:100%;
     width: 100%;
 }
-#bar_03{
-    height:50%;
-    width: 100%;
-}
+/*#bar_03{*/
+/*    height:50%;*/
+/*    width: 100%;*/
+/*}*/

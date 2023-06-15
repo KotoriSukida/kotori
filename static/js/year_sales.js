@@ -38,6 +38,12 @@
     title: {
       text: "年销售累计"
     },
+    tooltip: {
+      trigger: 'item',
+      axisPointer: {
+        type: 'shadow'
+      }
+    },
     xAxis: {
       type: 'category',
       name: "年",
@@ -46,7 +52,7 @@
       data: year_Sales_table_data.year
     },
     yAxis: [{
-      name: '销售额(万)',
+      name: '销售额',
       type: 'value',
       axisLine: {
         show: true,
@@ -58,7 +64,7 @@
         show: true,
       },
     }, {
-      name: '利润(万)',
+      name: '利润',
       type: 'value',
       offset: 40,
       axisLine: {
@@ -75,10 +81,7 @@
           color: 'rgba(180, 180, 180, 0.2)'
         },
         yAxisIndex: 0,
-        label: {
-          show: true,
-          position: 'inside'
-        }
+
       }, {
         name: "数量",
         data: year_Sales_table_data.count,
@@ -88,10 +91,7 @@
           color: 'rgba(180, 180, 180, 0.2)'
         },
         yAxisIndex: 1,
-        label: {
-          show: true,
-          position: 'inside'
-        }
+
       }, {
         name: "利润",
         data: year_Sales_table_data.profit,
@@ -101,10 +101,7 @@
           color: 'rgba(180, 180, 180, 0.2)'
         },
         yAxisIndex: 2,
-        label: {
-          show: true,
-          position: 'inside'
-        }
+
       }
     ]
   };
@@ -115,7 +112,7 @@
   // Generate data.
   option = {
     title: {
-      text: '月销售（盒须图）',
+      text: '月销售',
       left: 'left'
     },
     legend: {
@@ -220,7 +217,7 @@
     },
     yAxis: [{
       type: 'value',
-      name: '销售额(万)',
+      name: '销售额',
       splitArea: {
         show: false
       },
@@ -238,7 +235,7 @@
       },
     }, {
       type: 'value',
-      name: '利润(万)',
+      name: '利润',
       splitArea: {
         show: false
       },
@@ -289,6 +286,12 @@
       legend: {
         right: 0
       },
+       tooltip: {
+      trigger: 'item',
+      axisPointer: {
+        type: 'shadow'
+      }
+    },
       title: {
         text: "201" + (i + 5) + "年月销售"
       },
@@ -297,45 +300,40 @@
         data: month_x
       },
       yAxis: [{
-        name: '销售额(万)',
+        name: '销售额',
         type: 'value',
-        axisLine: {
-          show: true,
-        },
-      }, {
+
+      },
+        {
         name: '数量',
         type: 'value',
-        axisLine: {
-          show: true,
-        },
-      }, {
-        name: '利润(万)',
+      },
+        {
+        name: '利润',
         type: 'value',
         offset: 25,
-        axisLine: {
-          show: true,
-        },
+
       }],
       series: [
         {
           name: "销售额",
           data: year_month_data.sale[i],
           type: 'line',
-          smooth: true,
+          smooth: false,
           yAxisIndex: 0,
         },
         {
           name: "数量",
           data: year_month_data.count[i],
           type: 'line',
-          smooth: true,
+          smooth: false,
           yAxisIndex: 1,
         },
         {
           name: "利润",
           data: year_month_data.profit[i],
           type: 'line',
-          smooth: true,
+          smooth: false,
           yAxisIndex: 2,
         }
       ]

@@ -1,10 +1,169 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'base.html' %}
+{% block content %}
 
-</body>
-</html>
+
+<div style="position: absolute;width: 100%;height: 100%">
+    <div id="main1" style="width:50%; height:300px;float:left;"></div>
+    <div id="main2" style="width: 50%; height:300px;float:left"></div>
+    <div id="main3" style="width: 100%; height:300px;float:left"></div>
+</div>
+    <script type="text/javascript">
+        //基于准备好的dom，初始化ECharts图表
+    var myChart1 = echarts.init(document.getElementById("main1"));
+    var option1 = {
+   title: {
+    text: '发货时效'
+  },
+    tooltip: {
+    trigger: 'axis',
+    axisPointer: {
+      type: 'shadow'
+    }
+  },
+  xAxis: {
+    name:'邮寄方式',
+    type: 'category',
+    data: ['当日', '一级', '二级', '标准级']
+  },
+  yAxis: {
+    name:'平均发货时效（天）',
+    type: 'value'
+  },
+  series: [
+    {
+      data: [0.05, 2.22, 3.21, 5.01],
+      type: 'bar'
+    }
+  ]
+};
+
+var myChart2 = echarts.init(document.getElementById("main2"));
+var option2 = {
+   title: {
+    text: '发货方式与订单数'
+  },
+  tooltip: {
+    trigger: 'axis',
+
+  },
+  legend: {
+    data: ['2016', '2017', '2018']
+  },
+  xAxis:
+    {
+      name:'邮寄方式',
+      type: 'category',
+      data: ['当日', '一级', '二级', '标准级'],
+      axisPointer: {
+        type: 'shadow'
+      }
+    },
+yAxis: {
+    name:'订单数',
+    type: 'value'
+  },
+  series: [
+    {
+      name: '2016',
+      type: 'bar',
+      data: [
+        62,158,242,631
+      ],
+    },
+    {
+      name: '2017',
+      type: 'bar',
+      data: [
+        61,195,280,789
+      ],
+
+    },
+    {
+      name: '2018',
+      type: 'bar',
+      data: [80,246,345,1012],
+
+    }
+  ]
+};
+var myChart3 = echarts.init(document.getElementById("main3"));
+var option3 = {
+        title: {
+            text: '各省2018标准级发货',
+        },
+        tooltip: {
+                    valueFormatter: function (value) {
+                        return value + '天';
+                    }
+                },
+        dataset: {
+            source: [
+                ['天数', '省份'],
+                [0, '西藏'],
+                [4.54, '广西'],
+                [4.71, '云南'],
+                [4.71, '浙江'],
+                [4.74, '山西'],
+                [4.75, '海南'],
+                [4.78, '天津'],
+                [4.79, '四川'],
+                [4.83, '湖北'],
+                [4.89, '江西'],
+                [4.91, '内蒙古'],
+                [4.93, '黑龙江'],
+                [4.94, '北京'],
+                [4.96, '福建'],
+                [4.97, '山东'],
+                [4.98, '河南'],
+                [5, '湖南'],
+                [5.03, '广东'],
+                [5.04, '上海'],
+                [5.05, '辽林'],
+                [5.05, '重庆'],
+                [5.06, '安徽'],
+                [5.1, '江苏'],
+                [5.11, '陕西'],
+                [5.12, '河北'],
+                [5.14, '贵州'],
+                [5.25, '宁夏'],
+                [5.25, '甘肃'],
+                [5.38, '吉林'],
+                [5.5, '青海'],
+                [5.67, '新疆'],
+            ]
+        },
+        grid: { containLabel: true },
+        xAxis: {
+          name:'省',
+          type: 'category' ,
+          axisLabel: {
+            inside: false,
+            rotate: 45
+   },
+        },
+        yAxis: {
+          name:'天数',
+          type: 'value'
+        },
+        series: [
+            {
+                type: 'bar',
+                encode: {
+                    // Map the "amount" column to X axis.
+                    x: '省份',
+                    // Map the "product" column to Y axis
+                    y: '客户数'
+                },
+
+          }
+        ]
+    };
+
+      myChart1.setOption(option1);
+      myChart2.setOption(option2);
+      myChart3.setOption(option3);
+
+  </script>
+
+
+{% endblock content%}
